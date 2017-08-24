@@ -1,4 +1,4 @@
-package day1.robot;
+package day2;
 
 import java.awt.Color;
 
@@ -19,9 +19,9 @@ public class PentagonCrazy {
 
 		// 4. Make a variable for the number of sides you want (can’t test this one)
 
-		// 5. Make a variable for the angle you want the robot to turn. Hint: you can divide in Java using "/". Can’t test until step 6.
+		// 5. Make a variable for the angle you want the robot to turn. Hint: you can divide in Java using "/". Can’t test until step 6
 
-		// 7. Do steps #2 to #11, 200 times. When this is done you should see a pentagon.
+		// 7. Do steps #2 to #11, 200 times. When this is done you should see a pentagon
 
 			// 2. Move the robot 200 pixels
 	

@@ -1,4 +1,4 @@
-package day5;
+package day4;
 
 import org.jointheleague.graphical.robot.Robot;
 
@@ -32,15 +32,15 @@ public class StarShow {
 	
 			// 9. Call the drawStar() method with your star size variable
 	
-			// 14. Increase the X position by star size. See Figure 2.
+			// 14. Increase the X position by star size. See Figure 2
 	
-			// 15. decrease the Y position by star size. See Figure 3.
+			// 15. decrease the Y position by star size. See Figure 3
 	
 			// 16. Increase the star size by 20
 	
 			// 17. Turn the robot 12 degrees
 	
-			// 18. Make each star a different random color like in Figure 4. 
+			// 18. Make each star a different random color like in Figure 4
 
 	}
 
