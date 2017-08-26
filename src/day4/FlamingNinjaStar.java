@@ -1,12 +1,9 @@
 package day4;
+
 import org.jointheleague.graphical.robot.Robot;
 
-/*** Teacher's note ***/
- /* Before beginning recipe: 
- * 1. ask students to find and explain the variable in this recipe. 
- * 2. ask students what robot commands they think they will use to make picture in the laminated hand-outs. */
-
 public class FlamingNinjaStar {
+	
 	public static void main(String[] args) {
 
 		int baseSize = 300;		//the size of the black part of the star
@@ -40,6 +37,7 @@ public class FlamingNinjaStar {
 			// 9. Move the robot the distance in the variable baseSize
 			
 			// 10. Check that your shape is the same as Figure 1. This is one arm of the ninja star.
+			
 			// 11. Color your ninja star like Figure 2.
 		
 	}

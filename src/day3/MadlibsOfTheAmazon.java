@@ -3,6 +3,7 @@ package day3;
 import javax.swing.JOptionPane;
 
 public class MadlibsOfTheAmazon {
+	
 	public static void main(String[] args) {
 
 		// Put this sentence in a pop up:

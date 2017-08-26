@@ -4,95 +4,104 @@ import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;
 import java.net.MalformedURLException;
+import java.net.URI;
 
 import javax.swing.JOptionPane;
 
-import org.teachingextensions.logo.ImageBackground;
-import org.teachingextensions.logo.Paintable;
-import org.teachingextensions.logo.robot;
+//import org.teachingextensions.logo.ImageBackground;
+//import org.teachingextensions.logo.Paintable;
+//import org.teachingextensions.logo.robot;
 import org.jointheleague.graphical.robot.Robot;
 
-public class RobotTreasureHunt implements KeyEventDispatcher {
+public class RobotTreasureHunt implements KeyEventDispatcher{
 
-	int robotSpeed = 5;
-	// 1. Create a new mini robot
-	Robot rob = new Robot("mini");
+	// 1. Create a new mini robot (type "mini" inside the parentheses)
 	
-	private void goUp() {
-		// 2. Make the robot move up the screen
-		rob.move(10);
+	private void goUp() throws InterruptedException {
+		// 2. Make the robot move up the screen (use setAngle(angle) and microMove(distance))
+		
 	}
 
-	private void goDown() {
-		// 3. make the robot move down the screen
-		rob.move(-10);
+	private void goDown() throws InterruptedException{
+		// 3. make the robot move down the screen (use setAngle(angle) and microMove(distance))
+		
 	}
 
-	private void turnLeft() {
-		// 4. Make the robot turn to the left
-		rob.turn(-90);
+	private void turnLeft() throws InterruptedException{
+		// 4. Make the robot turn to the left (use setAngle(angle) and microMove(distance))
 
 	}
 
-	private void turnRight() {
-		// 5. make the robot turn to the right
-		rob.turn(90);
+	private void turnRight() throws InterruptedException{
+		// 5. make the robot turn to the right (use setAngle(angle) and microMove(distance))
+		
 	}
 
 	private void spaceBarWasPressed() {
-		int robotLocationX = rob.getX();
-		int robotLocationY = rob.getY();
 
-		// 5. Print out the variables for robotLocationX and robotLocationY
-		System.out.println("robot X: " + rob.getX());
-		System.out.println("robot Y: " + rob.getY());
+		// 5. Using the getX() and getY() methods, print out the x and y location of your robot
+		
 		// 6. If robot is at same location as the little girl,
 		// make a pop-up tell the robot where to go next
-		if (rob.getX() == 520 && rob.getY() == 330) {
-			JOptionPane.showMessageDialog(null, "Get the next clue at the blue flowers!");
-		}
+		
 		// 7. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
-		if (rob.getX() == 70 && rob.getY() == 150) {
-			JOptionPane.showMessageDialog(null, "Find the treasure at the waterfall!");
-		}
-		if (rob.getX() == 350 && rob.getY() == 350) {
-			JOptionPane.showMessageDialog(null, "CONGRATULATIONS!  YOU FOUND THE TREASURE!");
-		}
-		// 8.  For the final location - play a video for the user when they find the treasure (use the method below)
+		
+		// 8.  If the tortoise is in the final location, call the treasureFound() method
+		
 	}
 
 	private void go() {
 		KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this);
-		/*
-		 * If you want to use your own background, download the image you want, and
-		 * change the following line to point to it like: new
-		 * ImageBackground("file:/Users/joonspoon/Desktop/dinosaurLand.jpg");
-		 */
-		//Paintable backgroundImage = new
-		//ImageBackground("file:/Users/mattfreedman/Documents/The League/solvedrecipes/2dField.jpg");
-		//rob.getBackgroundWindow().addPaintable(backgroundImage);
-		Robot.setWindowImage("file:/Users/mattfreedman/Documents/The League/solvedrecipes/2dField.jpg");
-		rob.penUp();
+		Robot.setWindowImage("day4/treasure_hunt.jpg");
+	
 		JOptionPane.showMessageDialog(null, "Ask the whale for help with your quest. Press the space bar to ask.");
 
 	}
 
 	public boolean dispatchKeyEvent(KeyEvent e) {
+		System.out.println(e.getID());
 		if (e.getID() == KeyEvent.KEY_PRESSED) {
-			if (e.getKeyCode() == KeyEvent.VK_RIGHT)
-				turnRight();
+			if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+				try {
+					turnRight();
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				}
+			}
 			else if (e.getKeyCode() == KeyEvent.VK_LEFT)
-				turnLeft();
-			else if (e.getKeyCode() == KeyEvent.VK_UP)
-				goUp();
+				try {
+					turnLeft();
+				} catch (InterruptedException e2) {
+					e2.printStackTrace();
+				}
+			else if (e.getKeyCode() == 38)
+				try {
+					goUp();
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				}
 			else if (e.getKeyCode() == KeyEvent.VK_DOWN)
-				goDown();
+				try {
+					goDown();
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				}
 			else if (e.getKeyCode() == KeyEvent.VK_SPACE)
 				spaceBarWasPressed();
 		}
 		return false;
 	}
+	
+	static void treasureFound() {
+		try {
+			URI uri = new URI("https://www.youtube.com/watch?v=G0aIg4N6aro");
+			java.awt.Desktop.getDesktop().browse(uri);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 
 	public static void main (String[] args) throws MalformedURLException {
 		new RobotTreasureHunt().go();
