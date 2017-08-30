@@ -1,4 +1,4 @@
-package day4;
+package day2;
 
 import org.jointheleague.graphical.robot.Robot;
 
@@ -23,7 +23,6 @@ public class FlamingNinjaStar {
 		
 			// 3. Move the robot 64 pixels
 
-			
 			// 4. Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
 			
 			// 5. Move the robot the distance in the variable flameSize

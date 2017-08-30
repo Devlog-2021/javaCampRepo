@@ -39,15 +39,20 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 
 	private void spaceBarWasPressed() {
 
-		// 5. Using the getX() and getY() methods, print out the x and y location of your robot
+		// 5. Change ROBOTNAME below to match the name of the robot you created in step 1.  THEN, remove the slashes at the beginning of the next two lines
+		//int robotXLocation = ROBOTNAME.getX();
+		//int robotYLocation = ROBOTNAME.getY();
 		
-		// 6. If robot is at same location as the little girl,
-		// make a pop-up tell the robot where to go next
+		// 6. Print the robotXLocation and robotYLocation variables to the console 
 		
-		// 7. Give the user subsequent clues at different locations on the image
+		// 7. If robot is at same location as the little girl
+		//      --make a pop-up tell the robot where to go next
+		
+		// 8. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
 		
-		// 8.  If the tortoise is in the final location, call the treasureFound() method
+		// 9.  If the robot is in the final location
+		//     --call the treasureFound() method
 		
 	}
 
@@ -55,12 +60,11 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 		KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this);
 		Robot.setWindowImage("day4/treasure_hunt.jpg");
 	
-		JOptionPane.showMessageDialog(null, "Ask the whale for help with your quest. Press the space bar to ask.");
+		JOptionPane.showMessageDialog(null, "Ask the girl for help with your quest. Press the space bar to ask.");
 
 	}
 
 	public boolean dispatchKeyEvent(KeyEvent e) {
-		System.out.println(e.getID());
 		if (e.getID() == KeyEvent.KEY_PRESSED) {
 			if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
 				try {

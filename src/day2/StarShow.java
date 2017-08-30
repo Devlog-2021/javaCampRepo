@@ -1,4 +1,4 @@
-package day4;
+package day2;
 
 import org.jointheleague.graphical.robot.Robot;
 
