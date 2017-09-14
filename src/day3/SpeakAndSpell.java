@@ -2,6 +2,9 @@ package day3;
 
 import javax.swing.JOptionPane;
 
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
+
 /**
  * Teacher's Note: 
  * Have the kids play with the Speak & Spell. 
@@ -27,11 +30,9 @@ public class SpeakAndSpell {
 	}
 
 	static void speak(String words) {
-		try {
-			Runtime.getRuntime().exec("say " + words).waitFor();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		Voice voice = VoiceManager.getInstance().getVoice("kevin16");
+		voice.allocate();
+		voice.speak(words);
 	}
 
 }
