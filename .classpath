@@ -3,7 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="robot.jar"/>
-	<classpathentry kind="lib" path="Tortoise.jar"/>
 	<classpathentry kind="lib" path="cmu_time_awb.jar"/>
 	<classpathentry kind="lib" path="cmu_us_kal.jar"/>
 	<classpathentry kind="lib" path="cmudict04.jar"/>
