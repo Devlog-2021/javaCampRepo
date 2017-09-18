@@ -4,9 +4,6 @@ import javax.swing.JOptionPane;
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
-import javax.swing.JOptionPane;
-
-
 public class StephenHawking {
 	
 	// 1. make a main method and put steps 2, 3 & 4 inside it
