@@ -26,6 +26,7 @@ public class StephenHawking {
 		Voice voice = VoiceManager.getInstance().getVoice("kevin16");
 		voice.allocate();
 		voice.speak(words);
+		voice.deallocate();
 	}
 
 }
