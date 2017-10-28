@@ -14,15 +14,15 @@ public class AwesomeOrNot {
 
 	// 5. If the random number is 0
 
-	// -- tell the user whatever they entered are awesome!
+	// -- tell the user whatever they entered is awesome!
 
 	// 6. If the random number is 1
 
-	// -- tell the user whatever they entered are ok.
+	// -- tell the user whatever they entered is ok.
 
 	// 7. If the random number is 2
 
-	// -- tell the user whatever they entered are boring.
+	// -- tell the user whatever they entered is boring.
 
 	// 8. If the random number is 3
 

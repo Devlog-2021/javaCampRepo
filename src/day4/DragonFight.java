@@ -29,11 +29,11 @@ public class DragonFight {
 	
 	// 10. Pop up a message that tells the their current health and the health of the dragon
 	
-	// 11. If the user's health is less than or equal to 0
+	// 11. if the user's health is less than or equal to 0
 	
 		//-- Tell the user that they lost
 	
-	// 12. If the dragon's health is less than or equal to 0
+	// 12. else if the dragon's health is less than or equal to 0
 	
 		//-- Tell the user that the dragon is dead and they took a ton of gold!
 		

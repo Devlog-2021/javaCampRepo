@@ -25,10 +25,10 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		//1. Use this online tool to make a maze image and drop it into your day5 package: http://pixlr.com/editor/
 		maze = ImageIO.read(getClass().getResource("maze.png"));
 		//2. set the mouse pointer to the start of your maze using:
-		//new Robot().mouseMove(xPosition, yPosition)
+		//new Robot().mouseMove(int xPosition, int yPosition);
 		
 		//3. add a mouse motion listener using:
-		//addMouseMotionListener(this)
+		//addMouseMotionListener(this);
 		
 	}
 
