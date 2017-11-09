@@ -13,12 +13,12 @@ public class StarShow {
 	
 	void makeStars() {
 		
-		drawStar(150);	//5. delete this line. you will draw the star again in step 8.
+		drawStar(150);	//5. delete this line. You will draw the star again in step 8.
 		// 13. Set the speed to 8
 
 		// 6. Make a variable to hold the X position of the Robot and set it to 10
 
-		// 7. Make a variable to hold the Y position of the Robot and set it to 950
+		// 7. Make a variable to hold the Y position of the Robot and set it to 600
 
 		// 8. Make a variable to hold the star size and set it to 25
 
@@ -32,9 +32,9 @@ public class StarShow {
 	
 			// 9. Call the drawStar() method with your star size variable
 	
-			// 14. Increase the X position by star size. See Figure 2
+			// 14. Increase the value of the X position variable by star size. See Figure 2
 	
-			// 15. decrease the Y position by star size. See Figure 3
+			// 15. decrease the value of the Y position variable by star size. See Figure 3
 	
 			// 16. Increase the star size by 20
 	
