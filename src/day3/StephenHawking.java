@@ -23,10 +23,12 @@ public class StephenHawking {
 	
 	/* Don’t change this…. */
 	static void speak(String words) {
-		Voice voice = VoiceManager.getInstance().getVoice("kevin16");
-		voice.allocate();
-		voice.speak(words);
-		voice.deallocate();
+		try {
+			Runtime.getRuntime().exec("say " + words).waitFor();
+		}
+		 catch (Exception e) {
+			 e.printStackTrace();
+		 }
 	}
 
 }
