@@ -1,4 +1,4 @@
-package day4;
+package section4;
 
 public class QuizGame {
 	

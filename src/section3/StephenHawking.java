@@ -1,4 +1,4 @@
-package day3;
+package section3;
 
 import javax.swing.JOptionPane;
 import com.sun.speech.freetts.Voice;
