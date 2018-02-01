@@ -5,7 +5,6 @@ import javax.swing.JOptionPane;
 public class MadlibsOfTheAmazon {
 	
 	public static void main(String[] args) {
-System.out.println("test");
 		// Put this sentence in a pop up:
 		// If you find yourself having to cross a piranha-infested river, here's how to do it...
 		
