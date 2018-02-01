@@ -22,7 +22,7 @@ public class StarShow {
 
 		// 8. Make a variable to hold the star size and set it to 25
 
-		// 12. Repeat the steps #19 to #18, 30 times
+		// 12. Use a for loop to repeat steps #19 to #18, 30 times
 
 			// 19. Set the pen width to i 
 	

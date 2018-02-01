@@ -17,7 +17,7 @@ public class FlamingNinjaStar {
 
 		// 12. Set the robot speed to 10
 
-		// 13. Make all the code below repeat 25 times
+		// 13. Use a for loop to repeat all of the code below 25 times
 
 			// 2. Turn the robot 1/8 of a circle
 		
