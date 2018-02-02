@@ -14,7 +14,7 @@ public class SmartShapes {
         // 6. Make the robot move as fast as possible
 
 
-        // 5. Do everything below here 4 times
+        // 5. Use a for loop to repeat everything below 4 times. 
 
 
         //         2. Move your robot 200 pixels

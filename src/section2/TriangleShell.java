@@ -14,7 +14,7 @@ public class TriangleShell {
 
 		// 4. make a variable to hold the length of the triangle and set it to 50
 
-		// 7. Do the following (up to step 10) 60 times
+		// 7. Use a for loop to repeat steps #9 to #10, 60 times
 
 			// 9. Change the color of the pen to a random color
 	
