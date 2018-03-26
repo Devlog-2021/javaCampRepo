@@ -23,7 +23,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 	final int frameHeight = 600;
 
 	ScaryMaze() throws Exception {
-		//1. Use this online tool to make a maze image and drop it into your day5 package: http://pixlr.com/editor/
+		//1. Use this online tool to make a maze image and drop it into your section5 package: http://pixlr.com/editor/
 		//maze = ImageIO.read(getClass().getResource("standardMaze.jpg"));
 		//2. Change the line of code above so that it matches your maze's file name
 		
