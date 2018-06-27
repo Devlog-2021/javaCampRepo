@@ -13,7 +13,7 @@ public class PentagonCrazy {
 
 		// 3. Put the robot's pen down
 
-		// 8. Make the robot go at maximum speed (10)
+		// 8. Make the robot go at maximum speed (100)
 
 		// 9. Set the pen to a color that you like for the shape
 
