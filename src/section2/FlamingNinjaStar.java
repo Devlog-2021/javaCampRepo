@@ -15,7 +15,7 @@ public class FlamingNinjaStar {
 		
 		// *15. Make some adjustments to see what other kinds of shapes you can make.
 
-		// 12. Set the robot speed to 10
+		// 12. Set the robot speed to 100
 
 		// 13. Use a for loop to repeat all of the code below 25 times
 
