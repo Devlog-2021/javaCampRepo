@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 
 public class DragonFight {
-	// 1. Create a main method and put all of the code below inside of it
+	// 1. Put all of the game code inside the main bethod (below) 
 	public static void main(String[] args) {
 		
 		ImageIcon dragon = new ImageIcon("src/section4/dragonPicture.jpg");		
