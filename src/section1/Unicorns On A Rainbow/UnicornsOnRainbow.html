@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>Unicorn on a Rainbow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://league-central.github.io/curriculum/style/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}    
+</style>
+<script src="https://league-central.github.io/curriculum/script/headerAndFooter.js"></script>
+
+<body>
+        <div id ="wrap">
+            <div id ="main">
+                <div id = "moduleIndex">   
+
+
+<h1>Unicorn on a Rainbow</h1>
+<hr>
+                    <br>
+<p class="normal">You are going to make a program that lets a unicorn follow our mouse over a rainbow.
+<br>
+<br>
+    
+1. Find a photo of a rainbow:<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;a. Find an image on google<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b. Right click on the image and select &quot;Save Image As&quot;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;c. Rename your image something short (e.g. &quot;rainbow&quot;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d. Save the image on your Desktop<br>
+    <br>
+2. Find the starter code for this recipe and open it using Processing. Hint: the file name is Unicorns_On_Rainbow.pde and it should be in the section1 folder. <br>
+<br>
+
+3. Drag the image you saved in Step 1 from the Desktop and drop it into your sketch<br>
+    <br>
+    
+4. On line 1 of your sketch, add the following code:<br>
+
+<pre>PImage rainbow;
+PImage unicorn;</pre>
+
+<br>                    
+<p class="normal">
+5. Load your image by adding the following code to the setup() method:<br>
+
+<pre>rainbow = loadImage("rainbow.jpg");
+size(800, 600);
+rainbow.resize(width,height);
+</pre>
+
+<br>                    
+<p class="normal">
+6. Change “rainbow.jpg” in the above code so that it matches the name of your image.<br>
+  <br>
+7. At the beginning of the draw() method, set “rainbow” as your background using the background() method.<br>
+  
+     <img src="images/rainbow_.jpg" style="width: 200px; height=160px; margin: 0px 20px" align="left"> <h3><u>TESTING</u></h3><p class="normal"> Run the program. Is your image displayed in the sketch? If not, get this part working before you move on to the next step.</p>                 
+<br
+<br>
+<p class="normal">                    
+8. Now find an image of a unicorn.  Pick one that has a transparent background.  Search for “unicorn transparent” or “unicorn png”.  Follow steps a - d under step 1, then drag and drop it onto your sketch.<br>
+<br>
+9. In the setup()method, load the unicorn image using the following code:<br>
+
+<pre> unicorn = loadImage("unicorn.png");</pre>
+
+ <br>
+<p class="normal"> 
+10. Change “unicorn.png” from the previous step so that it matches the name of your image and resize it if you need to (see step 5 for a hint on how to resize an image).<br>
+ <br>
+11. In the draw() method, add the unicorn to your sketch using:<br>
+    <pre>image(unicorn, 150, 400);</pre>
+<br>
+     <img src="images/unicornOnRainbow.png" style="width: 200px; margin: 0px 20px" align="left"> <h3><u>TESTING</u></h3><p class="normal"> Run the program. Is your unicorn displayed on the rainbow? If not, get this part working before you move on to the next step.</p>                     
+<br><br>                    
+                    
+<br>
+<p class="normal">                
+12. Change the previous line of code so that the unicorn moves with your mouse! Hint: Processing gives you <font color="fuscia">mouseX</font> and <font color="fuscia">mouseY</font> to help you do this.<br>
+<br>
+13. Use an if statement to make the unicorn appear only when the mouse is pressed.  Hint: Processing gives you <font color="fuscia">mousePressed</font> to help you do this.<br>
+<br>
+14. Inside of your if statement, redraw the background before you draw the unicorn.  This will make it so that only one unicorn appears at a time.<br>  
+<br>
+<h3><u>EXTRAS</u></h3>
+<p class="normal"> 
+15. Add or subtract a number from mouseX and mouseY when drawing the unicorn so the middle appears exactly where you click the mouse.<br>
+<br>
+
+    </div>
+    </div>
+    </div>                
+                
+<div id="footer">
+<script>addFooter();</script>
+</div>
+
+</body>
+</html>
