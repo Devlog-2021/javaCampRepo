@@ -21,7 +21,7 @@ public class PentagonCrazy {
 
 		// 5. Make a second variable for the angle you want the robot to turn. Hint: you can divide in Java using "/". Can’t test until step 6
 
-		// 7. Use a for loop to repeat steps #2 to #11, 200 times. When this is done you should see a pentagon
+		// 7. Use a for loop to repeat the steps below (#2, #10, #6, #11) 200 times. When this is done you should see a pentagon
 
 			// 2. Move the robot 200 pixels
 	
