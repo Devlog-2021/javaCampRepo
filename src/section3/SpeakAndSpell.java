@@ -6,7 +6,14 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 public class SpeakAndSpell {
+	
+	/***********  SOUND ***************
+	 * This recipe requires a computer that can play sounds. 
+	 * If you cannot play sound on this computer, skip this recipe.
+	 * If you are not sure, ask your teacher 
+	 * *****************/
 
+	
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
 
