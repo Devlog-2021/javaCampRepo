@@ -4,50 +4,31 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class TriangleShell {
 
-	// Create a new Robot
+	// 1. Create a new Robot
 
 	
 	void go() {
-		// This code will draw one triangle whose sides are 100 pixels long....
-		// but first you have to write some code. Find the drawTriangle() method and 
-		// write the code to draw a triangle.
-		
-		drawTriangle(100); 
+		drawTriangle(100); // 3. delete this line (used only for testing)
 
-		// Run the program. Check that your triangle is the same as the first picture in the recipe.
-		// Remove the drawTriangle(100) from the program before you proceed.
-		
-		
-		// Make the robot go as fast as possible
-		
+		// 6. Make the robot go as fast as possible
 
-		// Make a variable to hold the length of the triangle and set it to 50
+		// 4. make a variable to hold the length of the triangle and set it to 50
 
-		// Make another variable to count how many triangles have been drawn and set it to 0
+		// 7. Use a for loop to repeat steps #9 to #10, 60 times
 
-		// Start a while loop to draw 60 triangles
-
-				//  Change the color of the pen to a random color
-
-				//  Increase the length variable by 10
-
-				//  Call the drawTriangle() method using the length variable
-
-				//  Turn the robot 6 degrees to the right
-
-				// Increase the number of triangles that have been drawn by 1
-
-
-		// End the while loop here
-
-// Run the program. Check that your pattern looks like the picture in the recipe.
-// See if you can figure out how to modify the program so the pattern fits in the window.
+			// 9. Change the color of the pen to a random color
+	
+			// 8. Increase the length variable by 10
+	
+			// 5. call your drawTriangle() method using your length variable
+	
+			// 10. Turn the robot 6 degrees to the right
 
 	}
 
+	/* 2. fill in the method below to draw a triangle. Use the length variable when you call move(). */
 	private void drawTriangle(int length) {
-		/* Write code here to draw a triangle. Use the length variable when you call move(). */
-
+		
 		
 		
 	}
@@ -57,4 +38,3 @@ public class TriangleShell {
 		new TriangleShell().go();
 	}
 }
-
