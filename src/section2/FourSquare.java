@@ -5,27 +5,38 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class FourSquare {
 	
-	// 2. Create a new Robot
+	// Create a new Robot
 
 	void go() {
-		// 4. Make the robot move as fast as possible
+		
+		// Make the robot move quickly (setSpeed)
 
-		// 5. Set the pen width to 5
+		// Set the robot's pen width to 5  
+		
+		// Put the robot's pen down
+		
+		// This numberOfSquares variable will track how many squares the robot has drawn
+		// It's set to zero here, because the robot hasn't drawn any squares yet.
+		int squaresDrawn = 0;
 
-		// 6. Use a for loop to repeat steps #7 to #8, four times...
+		// LOOP: Start a while loop to repeat the following code until 4 squares have been drawn:
 
-			// 7. Set the pen color to random
-	
-			// 1. Call the drawSquare() method
-	
-			// 8. Turn the robot 90 degrees to the right
-
+				// PEN COLOR.     Set the pen color to random       setRandomPenColor()
+		
+				// DRAW A SQUARE. Call the drawSquare() method.  Have you put some code in it?
+		
+				// TURN.          Turn the robot 90 degrees to the right
+			
+			    // INCREASE COUNT. Add one to the number of squares drawn
+			
+		// End the loop here
 	}
 
 	
 	void drawSquare() {
-		JOptionPane.showMessageDialog(null, "yay! you called the drawSquare() method!");
-		/* 3. Fill in the code to draw a square inside the method below. */
+		System.out.println("Yay! you called the drawSquare() method!");
+
+		/*  Put code here to draw one square - don't forget to use a loop! */
 		
 		
 	}
@@ -35,6 +46,3 @@ public class FourSquare {
 	}
 
 }
-
-
-

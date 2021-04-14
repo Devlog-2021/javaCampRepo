@@ -5,6 +5,11 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 public class StephenHawking {
+	/***********  SOUND ***************
+	 * This recipe requires a computer that can play sounds. 
+	 * If you cannot play sound on this computer, skip this recipe.
+	 * If you are not sure, ask your teacher 
+	 * *****************/
 	
 	// 1. make a main method and put steps 2, 3 & 4 inside it
 	
@@ -23,14 +28,24 @@ public class StephenHawking {
 	
 	
 	
-	/* Don’t change this…. */
+	/* Don't change this. */
 	static void speak(String words) {
-		try {
-			Runtime.getRuntime().exec("say " + words).waitFor();
+		
+		if (System.getProperty("os.name").contains("Windows")) {
+			String cmd = "PowerShell -Command \"Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('"
+					+ words + "');\"";
+			try {
+				Runtime.getRuntime().exec(cmd).waitFor();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else {
+			try {
+				Runtime.getRuntime().exec("say " + words).waitFor();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
-		 catch (Exception e) {
-			 e.printStackTrace();
-		 }
 	}
 
 }
