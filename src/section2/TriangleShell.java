@@ -6,13 +6,15 @@ public class TriangleShell {
 
 	// Create a new Robot
 
+	Robot rob = new Robot();
+	
 	
 	void go() {
+		
 		// This code will draw one triangle whose sides are 100 pixels long....
 		// but first you have to write some code. Find the drawTriangle() method and 
 		// write the code to draw a triangle.
-		
-		drawTriangle(100); 
+	rob.penDown();
 
 		// Run the program. Check that your triangle is the same as the first picture in the recipe.
 		// Remove the drawTriangle(100) from the program before you proceed.
@@ -20,13 +22,27 @@ public class TriangleShell {
 		
 		// Make the robot go as fast as possible
 		
+rob.setSpeed(100);
 
+int length = 50;
+	
 		// Make a variable to hold the length of the triangle and set it to 50
+
+int triangleCount = 0;
 
 		// Make another variable to count how many triangles have been drawn and set it to 0
 
-		// Start a while loop to draw 60 triangles
+while(triangleCount < 60) {
 
+		// Start a while loop to draw 60 triangles
+	rob.setRandomPenColor();
+	length += 10;
+	drawTriangle(length);
+	rob.turn(6);
+	triangleCount += 1;
+	
+}
+		
 				//  Change the color of the pen to a random color
 
 				//  Increase the length variable by 10
@@ -47,9 +63,13 @@ public class TriangleShell {
 
 	private void drawTriangle(int length) {
 		/* Write code here to draw a triangle. Use the length variable when you call move(). */
-
 		
-		
+		rob.move(length);
+		rob.turn(120);
+		rob.move(length);
+		rob.turn(120);
+		rob.move(length);
+		rob.turn(120);
 	}
 
 	

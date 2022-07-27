@@ -10,8 +10,27 @@ public class StephenHawking {
 	 * If you cannot play sound on this computer, skip this recipe.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
+
+	int count = 0;
 	
+	public static void main(String[] args) {
+		
+		for(int count = 0; count < 50; count += 1) {
+			
+			String sentence = JOptionPane.showInputDialog("Create a sentence!");
+			
+			speak(sentence);
+			
+		}
+	
+		
+	}
+		// TODO Auto-generated method stub
+
+
 	// 1. make a main method and put steps 2, 3 & 4 inside it
+	
+	
 	
 	// 4. Use a for loop to repeat steps #2 and #3, a lot of times
 	

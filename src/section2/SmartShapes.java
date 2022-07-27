@@ -7,6 +7,7 @@ public class SmartShapes {
     public static void main(String[] args) throws Exception {
         // Make a new Robot
 
+    	
 
         // Put the robot's pen down
 
@@ -20,8 +21,7 @@ public class SmartShapes {
     	
     	
         // Start a while loop to repeat the MOVE, TURN, and COUNT code 4 times
-
-    	
+    
         //         MOVE your robot 200 pixels
 
 

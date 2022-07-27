@@ -2,6 +2,8 @@ package section2;
 
 import org.jointheleague.graphical.robot.Robot;
 
+import apple.laf.JRSUIConstants.Size;
+
 public class FlamingNinjaStar {
 	
 	public static void main(String[] args) {
@@ -11,14 +13,34 @@ public class FlamingNinjaStar {
 		
 		// Make a new robot, and set it's pen down.
 
+		Robot rob = new Robot();
+		
 		// Set the robot speed to 100
+		
+		rob.setSpeed(100);
 		
 		// Set the robot window size to 800 x 800
 
 		//  COUNT. Make an int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
 		
+		int count = 0;
+		
 	       //  LOOP. Start a while loop to repeat all of the code below ONE time (we will change this later)
+		
+		while(count < 1) {
+			
+			rob.turn(1/8);
+			rob.move(64);
+			rob.turn(-40);
+			rob.setPenWidth(flameSize);
+			rob.turn(170);
+			rob.move(flameSize);
+			rob.turn(64);
+			rob.move(baseSize);
+			count += 1;
+			
+		}
 
 			   // TURN RIGHT     Turn the robot 1/8 of a circle (hint: 360 degrees will turn a full circle)
 		

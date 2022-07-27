@@ -34,6 +34,8 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 
 	ScaryMaze() throws Exception {
 		
+		
+		
 		//1. Use this online tool (https://www.pixilart.com/) to make a maze image. Size = 500x500
 		//   The maze must be drawn using 4 different colors, one each for: START, END, BACKGROUND, and path.
 
@@ -61,11 +63,15 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		
 		//4. Print the mouseColor variable (Hint: use syso)
 		
+		System.out.println(mouseColor);
+		
 		//5.  Run your program and move your mouse over the START COLOR. A number will be printed to the console
 		
 		
-		int startColor=0;
+		int startColor= 9;
+		
 		//6. Change the value of this startColor variable to the number printed in the previous step. 
+		
 		
 		
 		// Leave this code here!
